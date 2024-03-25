@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #245567;
+}
+
+header{
+    position: static;
+    height: 150px;
+    background: linear-gradient(45deg, #97dedf, #6dbfd4);
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 0px 8px -1px rgba(0,0,0,1);
+}
+
+/* Tô com medo de bagunçar os outros layouts, mas depois ajeito pra todos os estilos ficarem aqui sem dar bosta */
+
+/* Inicio CSS do arquivo menu.html */
+.card{
+    height: 23%;
+    margin-top: 2rem;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(#599dc6, #597ab0);
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    /*margin-top: 1rem;*/
+    padding: 1rem;
+}
+
+.user_img img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #245567;
+    object-fit: cover;
+}
+
+
+
+
+.footer_card{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.footer_card a {
+    color: #fff;
+    text-decoration: none;      
+}
+
+.services_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 84vh;
+    background: linear-gradient(#245567, #2f4858);
+    overflow: hidden;
+}
+
+#title_service {
+    color: #fff;
+    margin-top: 7rem;
+}
+
+#subtitle_service {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.services{
+    max-width: 500px;
+    margin-top: 2rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.option{
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(#0088ad, #0082c2);
+    text-decoration: none;
+}
+
+.option > i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.option > p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+/* Fim CSS do arquivo menu.html */
+
+/* Arquivo agendamento_consulta.html */
+
+.informations{
+    width: 70%;
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+
+.calendar input{
+    background-color: #599dc6;
+    padding: 15px;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hours_enables{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    width: 800px;
+}
+
+.subtitle {
+    color: #fff;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.times{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+.time_hours{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #599dc6;
+    color: #fff;
+    cursor: pointer;
+    width: 275px;
+}
+
+.obs textarea {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.btn_actions{
+    position: relative;
+    top: 93%;
+    margin-left: 2rem;
+}
+
+.btn_actions #accept{
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #245567;
+    font-weight: bold;
+    padding: .6rem;
+    border-radius: 4px;
+}
+
+.btn_actions #cancel{
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #597ab0;
+    color: #FFF;
+    font-weight: bold;
+    padding: .6rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+/* Arquivo lista paciente exames */
+.list_users{
+    padding: 2px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-height: 600px;
+    width: 480px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.list_users::-webkit-scrollbar {
+    width: 12px;
+    height: 14px;
+}
+
+.list_users::-webkit-scrollbar-track {
+    background-color: #245567;
+}
+
+.list_users::-webkit-scrollbar-thumb {
+    background-color: #6dbfd4;  
+    border-radius: 20px;       
+}
+
+.user_info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user_info_list{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 460px;
+
+    background-color: #597ab0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .1s;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.type_schedule{
+    display: flex;
+    align-items: center;
+    width: 460px;
+    height: 4rem;
+    justify-content: center;
+    background-color: #597ab0;
+    border-radius: 10px;
+    transition: all .1s;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+#tipo-consulta,
+#tipo-exame{
+    font-size: 18pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+.user_info_list:hover{
+    box-shadow: 0px 0px 10px #97dedf;
+}
+
+.date-consult{
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    border-right: 2px solid #fff;
+    padding: 1rem;
+    font-size: 18pt;
+    background-color: #6dbfd4;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#date_list{
+    font-size: 18pt;
+    font-weight: bold;
+    color: #2f4858;
+}
+
+#day_list{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user_more_info{
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    gap: 4px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.name-date{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Pendente{
+    background-color: #f9f871;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.Realizado{
+    background-color: #389b82;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.Cancelado{
+    background-color: #b62b21;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 6px;
+}
+
+/* Fim lista paciente exames */
+
+/* modelo de confirmacao */
+.card-confirmation{
+    width: 350px;
+    height: fit-content;
+    margin-top: 13rem;
+    background-color: #599dc6;
+    border-radius: 12px;
+    display: flex;
+    padding-bottom: 3rem;
+    flex-direction: column; 
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+}
+
+#btn-cancel{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    left: 80%;
+    margin-top: 18px; 
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #0082c2;
+}
+
+#txt-card-confirmation{
+    margin: 1.3rem auto 1.3rem;
+    font-size: 14pt;
+    color: #FFF;
+    text-align: center;
+    padding: 0px 6px;                                               
+}
+
+.btn-confirmation{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.op-good{
+    background-color: #0088ad;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.op-good:hover{
+    background-color: #00627D;
+    box-shadow: 0px 0px 10px #97dedf;
+}
+
+.op-bad{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #0088ad;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+
+}
+
+.op-bad:hover{
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 10px #97dedf;
+}
+
+.modal-content{
+    background-color: #599dc6;
+    color: #fff;
+}
+/* Fim modelo de confirmacao */
+
+/* arquivo do adicionando consulta ou exame pro usuário */
+
+.details-users{
+    width: 430px;
+    overflow-y: auto;
+    padding: 0 1rem;
+}
+
+.details-users::-webkit-scrollbar {
+    width: 12px;
+    height: 14px;
+}
+
+.details-users::-webkit-scrollbar-track {
+    background-color: #245567;
+}
+
+.details-users::-webkit-scrollbar-thumb {
+    background-color: #6dbfd4;  
+    border-radius: 20px;       
+}
+
+.dtl-user{
+    margin-top: 1rem;
+    width: auto;
+    background-color: #599dc6;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
+    font-weight: bold;
+}
+
+.dtl-user > summary {
+    color: #fff;
+}
+
+.slt-option{
+    margin-top: 10px;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    color: #0082c2;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.two-items{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+.form-group select{
+    margin-top: 4px;
+    background-color: #599dc6;
+    color: #FFF;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.btn-send{
+    margin-top: 10px;
+    padding: 8px;
+    width: fit-content;
+    border: none;
+    border-radius: 4px;
+    background-color: #0088ad;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 67%;
+}
+
+/* Fim do arquivo adicionando consulta ou exame */
+
+/* Tela 05 */
+
+.opcoes-disponibilidades{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+/* está conflitando com as estilizações anteriores na tela de encaminhamentos */
+/*.user_info_list{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 17%;
+    padding: 12px 14px;
+    color:#fff;
+    background-color: #597ab0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.user_info_list:hover{
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, .3);
+    font-weight: bold;
+}*/
+
+/* Fim tela 05 */
+
+/* tela 05 op2 */
+
+.content-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#title-login{
+    color:#fff;
+}
+
+.info-content{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mandatory {
+    position: relative;
+    right: 18rem;
+    color: #599dc6;
+}
+
+.form-control{
+    margin-top: 4rem;
+    width: 34%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+label {
+    flex-basis: 40%;
+    text-align: left;
+    color: #ccc;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select{
+    flex-basis: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    width: 100%;
+}
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+#accept{
+    border: none;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #245567;
+    font-weight: bold;
+    padding: .6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .324s;
+}
+
+#accept:hover{
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, .3);
+}
+
+#cancel{
+    border: 1px solid #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #245567;
+    color: #FFF;
+    font-weight: bold;
+    padding: .6rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .324s;
+}
+
+#cancel:hover{
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, .3);
+}
+
+/* fim tela 05 op2 */
+
+/* tela 7 */
+
+.radio-panel input[type="radio"],
+.radio-panel label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.btn-accept{
+    border: none;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #245567;
+    font-weight: bold;
+    padding: .6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .324s;
+}
+
+.btn-accept:hover{
+    box-shadow: 0px 0px 10px #97dedf;
+}
+
+
+
+.card-links{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
